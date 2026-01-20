@@ -11,6 +11,9 @@
     <!-- Bootstrap Icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
 
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- My CSS -->
     <link rel="stylesheet" href="style.css" />
     <title>My Portfolio | Vanesa Ragazza</title>
@@ -47,7 +50,7 @@
     <section class="jumbotron text-center">
       <img src="img/vanesa.jpg (1).jpeg" alt="Vanesa Ragazza" width="200" class="rounded-circle img-thumbnail" />
       <h1 class="font-monospace">Vanesa Ragazza</h1>
-      <p class="lead">Mahasiswa Semester2 Sistem Informasi Kota Cerdas</p>
+      <p class="lead"></p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffff"
@@ -67,10 +70,10 @@
           </div>
         </div>
         <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-right" data-aos-duration="1000">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet laudantium commodi inventore velit sed doloribus architecto, sunt repudiandae porro ratione?</p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quia ipsum, modi commodi tempora et nihil. Voluptate suscipit, non nobis maiores ex quas sunt sed!</p>
           </div>
         </div>
@@ -95,7 +98,7 @@
         </div>
         <div class="row">
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="zoom-in" data-aos-duration="500">
               <img src="img/projects/projects.1.png" class="card-img-top" alt="projects 1" />
               <div class="card-body">
                 <h5 class="card-title">Data Classification with IBM Granite</h5>
@@ -107,7 +110,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="100">
               <img src="img/projects/projects.2.png" class="card-img-top" alt="projects 2" />
               <div class="card-body">
                 <h5 class="card-title">Simple Cashier System (C++)</h5>
@@ -119,7 +122,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="150">
               <img src="img/projects/projects.3.png" class="card-img-top" alt="projects 3" />
               <div class="card-body">
                 <h5 class="card-title">21-Day Habit Journaling Dashboard</h5>
@@ -141,6 +144,25 @@
       </svg>
     </section>
     <!-- Akhir Projects -->
+
+    <!-- Gallery -->
+    <section id="gallery">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>My Activity Gallery</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/gallery/thumbnail/6.jpeg" alt="Gambar 1 " />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Gallery -->
 
     <!-- Contact -->
     <sectiom id="contact">
@@ -195,6 +217,22 @@
     <!--  Akhir Footer -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrambleTextPlugin.min.js"></script>
+    <script>
+      gsap.registerPlugin(ScrambleTextPlugin);
+      gsap.to(".lead", { duration: 2, scrambleText: "Mahasiswa Semester2 Sistem Informasi Kota Cerdas" });
+      gsap.from(".navbar", { duration: 1.5, y: "-100%", opacity: 0 });
+      gsap.from(".font-monospace", { duration: 1, x: "50", opacity: 0, delay: 0.5, ease: "back" });
+    </script>
 
     <script>
       const scriptURL = "https://script.google.com/macros/s/AKfycbziZzFxAA8Ka8wGURxo8KsGrNZ6mfUL5R6FJZlBjOAaLTz5dEMmAx9AR7sPX8avxjqZMw/exec";
