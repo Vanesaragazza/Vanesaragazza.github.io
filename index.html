@@ -22,7 +22,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #ef8888">
       <div class="container shadow-lg">
-        <a class="navbar-brand" href="#">Vanesa Ragazza</a>
+        <a class="navbar-brand" href="#">My first portfolio <i class="bi bi-cursor-fill"></i></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -37,6 +37,16 @@
             <li class="nav-item">
               <a class="nav-link" href="#projects">Projects</a>
             </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Gallery </a>
+              <ul class="dropdown-menu shadow" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#gallery">My Activity Gallery</a></li>
+
+                <li><hr class="dropdown-divider" /></li>
+
+                <li><a class="dropdown-item" href="gallery-semester1.html">Semester 1</a></li>
+              </ul>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
@@ -49,7 +59,7 @@
     <!-- Jumbotron -->
     <section class="jumbotron text-center">
       <img src="img/vanesa.jpg (1).jpeg" alt="Vanesa Ragazza" width="200" class="rounded-circle img-thumbnail" />
-      <h1 class="font-monospace">Vanesa Ragazza</h1>
+      <h1 class="font-league spartan">Vanesa Ragazza</h1>
       <p class="lead"></p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
@@ -71,10 +81,16 @@
         </div>
         <div class="row justify-content-center fs-5 text-center">
           <div class="col-md-4" data-aos="fade-right" data-aos-duration="1000">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet laudantium commodi inventore velit sed doloribus architecto, sunt repudiandae porro ratione?</p>
+            <p>
+              Mahasiswa aktif semester 2 Program Studi Sistem Informasi Kota Cerdas di Politeknik Negeri Indramayu dengan latar belakang pendidikan Akuntansi. Memiliki minat kuat dalam pengembangan teknologi, khususnya pemrograman web,
+              serta sedang mempersiapkan proyek digital pertama sebagai bentuk penerapan ilmu yang dipelajari.
+            </p>
           </div>
           <div class="col-md-4" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quia ipsum, modi commodi tempora et nihil. Voluptate suscipit, non nobis maiores ex quas sunt sed!</p>
+            <p>
+              Berpengalaman magang di bidang keuangan saat SMK serta memiliki pengalaman kerja sebagai admin dan customer service, yang melatih kemampuan analisis, komunikasi, dan pemecahan masalah. Aktif berkontribusi dalam kegiatan sosial
+              dan edukatif, melalui UKM Kota Pena serta mengajar pencak silat di lingkungan pesantren.
+            </p>
           </div>
         </div>
       </div>
@@ -99,7 +115,7 @@
         <div class="row">
           <div class="col-md-4 mb-3">
             <div class="card" data-aos="zoom-in" data-aos-duration="500">
-              <img src="img/projects/projects.1.png" class="card-img-top" alt="projects 1" />
+              <img src="img/projects/projects.1.png" class="card-img-top img-hover" alt="projects 1" />
               <div class="card-body">
                 <h5 class="card-title">Data Classification with IBM Granite</h5>
                 <p class="card-text">
@@ -111,7 +127,7 @@
           </div>
           <div class="col-md-4 mb-3">
             <div class="card" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="100">
-              <img src="img/projects/projects.2.png" class="card-img-top" alt="projects 2" />
+              <img src="img/projects/projects.2.png" class="card-img-top img-hover" alt="projects 2" />
               <div class="card-body">
                 <h5 class="card-title">Simple Cashier System (C++)</h5>
                 <p class="card-text">
@@ -123,7 +139,7 @@
           </div>
           <div class="col-md-4 mb-3">
             <div class="card" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="150">
-              <img src="img/projects/projects.3.png" class="card-img-top" alt="projects 3" />
+              <img src="img/projects/projects.3.png" class="card-img-top img-hover" alt="projects 3" />
               <div class="card-body">
                 <h5 class="card-title">21-Day Habit Journaling Dashboard</h5>
                 <p class="card-text">
@@ -146,21 +162,20 @@
     <!-- Akhir Projects -->
 
     <!-- Gallery -->
-    <section id="gallery" class="py-5">
+    <section id="gallery" class="py-5 bg-light">
       <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>My Activity Gallery</h2>
-          </div>
-        </div>
         <div class="row justify-content-center">
-          <div class="col-md-4">
-            <div class="card shadow-sm">
-              <img src="img/gallery/thumbnail/1.JPG" class="card-img-top" alt="Semester 1" />
-              <div class="card-body text-center">
-                <h5 class="card-title">Aktivitas Semester 1</h5>
-                <p class="card-text">Kumpulan dokumentasi kegiatan seru selama semester 1.</p>
-                <a href="gallery-semester1.html" class="btn btn-danger">Buka Folder</a>
+          <div class="col-md-8">
+            <div class="gallery-card-wrapper shadow-lg p-4 rounded-3">
+              <h2 class="text-center mb-4">My Activity Gallery</h2>
+
+              <div class="card border-0 mx-auto" style="max-width: 500px">
+                <img src="img/gallery/thumbnail/1.JPG" class="card-img-top rounded shadow" alt="Semester 1" />
+                <div class="card-body text-center bg-white rounded-bottom">
+                  <h5 class="card-title">Aktivitas Semester 1</h5>
+                  <p class="card-text text-muted">Kumpulan dokumentasi kegiatan seru semester 1 <i class="bi bi-camera"></i></p>
+                  <a href="gallery-semester1.html" class="btn btn-danger px-4">Click here</a>
+                </div>
               </div>
             </div>
           </div>
@@ -172,9 +187,9 @@
     <!-- Contact -->
     <sectiom id="contact">
       <div class="container">
-        <div class="row text-center mb-3">
+        <div class="row text-center">
           <div class="col">
-            <h2>Contact Me</h2>
+            <h2 class="mb-5">Contact Me</h2>
           </div>
         </div>
         <div class="row justify-content-center">
@@ -234,7 +249,7 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrambleTextPlugin.min.js"></script>
     <script>
       gsap.registerPlugin(ScrambleTextPlugin);
-      gsap.to(".lead", { duration: 2, scrambleText: "Mahasiswa Semester2 Sistem Informasi Kota Cerdas" });
+      gsap.to(".lead", { duration: 2, scrambleText: "Mahasiswa | Sistem Informasi Kota Cerdas" });
       gsap.from(".navbar", { duration: 1.5, y: "-100%", opacity: 0 });
       gsap.from(".font-monospace", { duration: 1, x: "50", opacity: 0, delay: 0.5, ease: "back" });
     </script>

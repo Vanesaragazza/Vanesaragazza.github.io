@@ -10,3 +10,41 @@ section {
 body {
   min-height: 500px;
 }
+
+/* Membuat dropdown muncul saat hover */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+.gallery-card-wrapper {
+  /* Logika: radial-gradient(bentuk, warna-dalam, warna-luar) */
+  background: radial-gradient(circle, #ef8888 0%, #f5d5d5 70%, #ffffff 100%);
+
+  /* Agar transisi dengan section lain tetap halus */
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Membuat foto terlihat lebih menonjol di atas gradasi */
+.gallery-card-wrapper .card {
+  transition: all 0.3s ease;
+}
+
+.gallery-card-wrapper .card:hover {
+  transform: scale(1.02); /* Sedikit membesar saat disentuh */
+}
+
+/* Class untuk membuat efek zoom pada gambar */
+.img-hover {
+  transition: transform 0.5s ease;
+  cursor: pointer;
+}
+
+.img-hover:hover {
+  transform: scale(1.1); /* Foto membesar 10% dari ukuran asli */
+}
+
+/* Opsional: Agar foto tidak keluar jalur saat membesar */
+.card {
+  overflow: hidden;
+}
