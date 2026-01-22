@@ -48,3 +48,22 @@ body {
 .card {
   overflow: hidden;
 }
+
+/* Menyamakan ukuran semua foto di dalam card */
+.card-img-top {
+  height: 200px; /* Tentukan tinggi yang sama untuk semua foto */
+  object-fit: cover; /* Foto akan dipotong secara otomatis agar pas dengan kotak tanpa gepeng */
+  object-position: center; /* Memastikan bagian tengah foto tetap terlihat */
+}
+
+/* Memastikan semua card dalam satu baris punya tinggi yang sama */
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Memastikan isi card (teks) mengisi ruang yang tersisa agar tombol sejajar */
+.card-body {
+  flex-grow: 1;
+}
