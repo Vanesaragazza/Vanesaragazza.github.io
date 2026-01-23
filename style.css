@@ -50,7 +50,7 @@ body {
 }
 
 /* Menyamakan ukuran semua foto di dalam card */
-.card-img-top {
+.img-gallery-grid {
   height: 200px; /* Tentukan tinggi yang sama untuk semua foto */
   object-fit: cover; /* Foto akan dipotong secara otomatis agar pas dengan kotak tanpa gepeng */
   object-position: center; /* Memastikan bagian tengah foto tetap terlihat */
